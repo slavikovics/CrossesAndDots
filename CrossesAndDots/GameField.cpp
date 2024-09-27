@@ -1,13 +1,11 @@
 #include "GameField.h"
 
-// Constructor for main instances
 GameField::GameField(int dimension)
 {
 	isACopy = false;
 	SetFieldDimension(dimension);
 }
 
-// Constructor for copied instances (for the field of GameStateChecker). Requires operator= call.
 GameField::GameField()
 {
 	fieldDimension = 0;
@@ -15,7 +13,6 @@ GameField::GameField()
 	isACopy = true;
 }
 
-// Destructor is only called in main instances
 GameField::~GameField()
 {
 	if (isACopy) return;

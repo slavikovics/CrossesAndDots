@@ -1,0 +1,40 @@
+\doxysection{Game\+Field Class Reference}
+\hypertarget{class_game_field}{}\label{class_game_field}\index{GameField@{GameField}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{class_game_field_a2b77913bbaac054b7f3acae63f27dcd7}\label{class_game_field_a2b77913bbaac054b7f3acae63f27dcd7} 
+{\bfseries Game\+Field} (int dimension)
+\item 
+\Hypertarget{class_game_field_a54ae7f0c3666e46c016aa82b9b1e37cb}\label{class_game_field_a54ae7f0c3666e46c016aa82b9b1e37cb} 
+\mbox{\hyperlink{class_game_field}{Game\+Field}} \& {\bfseries operator=} (\mbox{\hyperlink{class_game_field}{Game\+Field}} \&game\+Field)
+\item 
+\Hypertarget{class_game_field_a953096a41dbcb6f5ecff7150f254a377}\label{class_game_field_a953096a41dbcb6f5ecff7150f254a377} 
+int \& {\bfseries operator\mbox{[}$\,$\mbox{]}} (int index)
+\item 
+\Hypertarget{class_game_field_a613dc36449a05e0f90e19a0948f3471e}\label{class_game_field_a613dc36449a05e0f90e19a0948f3471e} 
+bool {\bfseries Set\+Zero} (int y, int x)
+\item 
+bool \mbox{\hyperlink{class_game_field_adbdd53c1b7d6d2cdfb71a509526604b1}{Set\+Cross}} (int y, int x)
+\item 
+\Hypertarget{class_game_field_a4d34cf829b9f63ef2e71196727311683}\label{class_game_field_a4d34cf829b9f63ef2e71196727311683} 
+int {\bfseries Get\+Dimension} ()
+\item 
+\Hypertarget{class_game_field_af70acb0b3a1f7365b22489826ca1e56a}\label{class_game_field_af70acb0b3a1f7365b22489826ca1e56a} 
+string {\bfseries Get\+Field2} (int x, int y)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_game_field_adbdd53c1b7d6d2cdfb71a509526604b1}\index{GameField@{GameField}!SetCross@{SetCross}}
+\index{SetCross@{SetCross}!GameField@{GameField}}
+\doxysubsubsection{\texorpdfstring{SetCross()}{SetCross()}}
+{\footnotesize\ttfamily \label{class_game_field_adbdd53c1b7d6d2cdfb71a509526604b1} 
+bool Game\+Field\+::\+Set\+Cross (\begin{DoxyParamCaption}\item[{int}]{y}{, }\item[{int}]{x}{}\end{DoxyParamCaption})}
+
+Method for setting a cross in a \doxylink{class_game_field}{Game\+Field}. Tries to set cross in the given position. Returns true if the cross was successfully set, returns false if cross can\textquotesingle{}t be set in the given position 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Crosses\+And\+Dots/Game\+Field.\+h\item 
+Crosses\+And\+Dots/Game\+Field.\+cpp\end{DoxyCompactItemize}
