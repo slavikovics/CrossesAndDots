@@ -35,9 +35,11 @@ GameField& GameField::operator= (GameField& gameField)
 	return *this;	
 }
 
-string GameField::operator[](int x)
+int& GameField::operator[](int index)
 {
-	return GetField(x);
+	unsigned x = index % fieldDimension;
+	unsigned y = index / fieldDimension;
+	return fields[x][y];
 }
 
 void GameField::SetFieldDimension(int d)

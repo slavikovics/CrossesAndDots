@@ -14,7 +14,7 @@ class GameField
 		GameField& operator = (GameField& gameField);
 
 		// TODO change implementation
-		string operator[](int x);
+		int& operator[](int index);
 
 		bool SetZero(int y, int x);
 
