@@ -18,6 +18,7 @@ class ScenesBuilder
 
 	static string GameBuild(GameField & gameField)
 	{
+		GameStates gameStates;
 		int fieldDimension = gameField.GetDimension();
 
 		string output = "";
