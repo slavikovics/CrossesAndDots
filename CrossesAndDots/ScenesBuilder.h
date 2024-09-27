@@ -1,5 +1,4 @@
 #pragma once
-
 #include "GameField.h"
 
 class ScenesBuilder
