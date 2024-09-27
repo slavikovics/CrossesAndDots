@@ -14,8 +14,8 @@ void NewGame()
 	cout << "Enter field dimensions" << endl;
 	cin >> dimension;
 
-	GameField gameField = GameField(dimension);
-	GameStateChecker gameStateChecker = GameStateChecker(dimension, gameField);
+	GameField gameField(dimension);
+	GameStateChecker gameStateChecker(dimension, gameField);
 	
 	system("cls");
 
