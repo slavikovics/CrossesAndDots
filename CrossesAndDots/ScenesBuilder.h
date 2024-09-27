@@ -26,19 +26,19 @@ class ScenesBuilder
 		{
 			for (int j = 0; j < fieldDimension; j++)
 			{
-				if (gameField.GetField2(i, j) == "none")
+				if (gameField.GetField2(i, j) == gameStates.StateNone)
 				{
 					output += " # ";
 					continue;
 				}
 
-				if (gameField.GetField2(i, j) == "cross")
+				if (gameField.GetField2(i, j) == gameStates.StateCross)
 				{
 					output += " X ";
 					continue;
 				}
 
-				if (gameField.GetField2(i, j) == "zero")
+				if (gameField.GetField2(i, j) == gameStates.StateZero)
 				{
 					output += " O ";
 					continue;
