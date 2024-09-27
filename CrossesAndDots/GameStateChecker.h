@@ -113,7 +113,6 @@ class GameStateChecker
 
 		string CheckGameState()
 		{
-			string s = _gameField.GetField2(0, 0);
 
 			string state = CheckVertical();
 			if (state != gameStates.StateNone) return state;
