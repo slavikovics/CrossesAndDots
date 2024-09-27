@@ -13,7 +13,7 @@ namespace MicrosoftUnitTests
 	public:
 		
 		/// <summary>
-		/// Testting constructor GameField(int dimension);
+		/// Testting constructor GameField(int dimension), GetDimension(), GetField(i, j)
 		/// </summary>
 		TEST_METHOD(ConstructorTest)
 		{
@@ -30,9 +30,20 @@ namespace MicrosoftUnitTests
 		}
 
 		/// <summary>
+		/// Testing GetField2()
+		/// </summary>
+		TEST_METHOD(GetField2Test)
+		{
+			GameField gameField(5);
+			Assert::AreEqual(gameField.GetField2(10, 10), (string)"wrong arguments");
+
+			Assert::AreEqual(gameField.GetField2(-10, -10), (string)"wrong arguments");
+		}
+
+		/// <summary>
 		/// Testing operator []
 		/// </summary>
-		TEST_METHOD(OperatorTest1)
+		TEST_METHOD(OperatorTest)
 		{
 			GameField gameField(5);
 			gameField[5] = 1;
@@ -46,13 +57,38 @@ namespace MicrosoftUnitTests
 		}
 
 		/// <summary>
-		/// Testing operator =
+		/// Testing SetZero()
 		/// </summary>
-		TEST_METHOD(OperatorTest2)
+		TEST_METHOD(SetZeroTest)
 		{
-			GameField gameField1(5);
-			GameField gameField2 = gameField1;
-			Assert::AreEqual(gameField2.);
+			GameField gameField(3);
+			gameField.SetZero(0, 0);
+			Assert::AreEqual(gameField.GetField2(0, 0), gameStates.StateZero);
+
+			gameField.SetZero(1, 1);
+			Assert::AreEqual(gameField.GetField2(1, 1), gameStates.StateZero);
+
+			Assert::AreEqual(gameField.SetZero(-1, -1), false);
+
+			Assert::AreEqual(gameField.SetZero(10, 10), false);
 		}
+
+		/// <summary>
+		/// Testing SetCross()
+		/// </summary>
+		TEST_METHOD(SetCrossTest)
+		{
+			GameField gameField(3);
+			gameField.SetCross(0, 0);
+			Assert::AreEqual(gameField.GetField2(0, 0), gameStates.StateCross);
+
+			gameField.SetCross(1, 1);
+			Assert::AreEqual(gameField.GetField2(1, 1), gameStates.StateCross);
+
+			Assert::AreEqual(gameField.SetCross(-1, -1), false);
+
+			Assert::AreEqual(gameField.SetCross(10, 10), false);
+		}
+
 	};
 }
