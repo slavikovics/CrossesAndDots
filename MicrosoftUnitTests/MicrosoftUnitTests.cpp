@@ -108,5 +108,102 @@ namespace MicrosoftUnitTests
 		}
 	};
 
+	TEST_CLASS(GameStateCheckerTests)
+	{
+		TEST_METHOD(CheckStateTestCross1)
+		{
+			GameField gameField(3);
+			gameField.SetCross(0, 0);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
 
+			gameField.SetCross(0, 1);
+			gameField.SetCross(0, 2);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateCross);
+		}
+
+		TEST_METHOD(CheckStateTestZero1)
+		{
+			GameField gameField(3);
+			gameField.SetZero(0, 0);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
+
+			gameField.SetZero(0, 1);
+			gameField.SetZero(0, 2);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateZero);
+		}
+
+		TEST_METHOD(CheckStateTestCross2)
+		{
+			GameField gameField(3);
+			gameField.SetCross(0, 0);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
+
+			gameField.SetCross(1, 0);
+			gameField.SetCross(2, 0);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateCross);
+		}
+
+		TEST_METHOD(CheckStateTestZero2)
+		{
+			GameField gameField(3);
+			gameField.SetZero(0, 0);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
+
+			gameField.SetZero(1, 0);
+			gameField.SetZero(2, 0);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateZero);
+		}
+
+		TEST_METHOD(CheckStateTestCross3)
+		{
+			GameField gameField(3);
+			gameField.SetCross(0, 0);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
+
+			gameField.SetCross(1, 1);
+			gameField.SetCross(2, 2);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateCross);
+		}
+
+		TEST_METHOD(CheckStateTestZero3)
+		{
+			GameField gameField(3);
+			gameField.SetZero(0, 0);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
+
+			gameField.SetZero(1, 1);
+			gameField.SetZero(2, 2);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateZero);
+		}
+
+		TEST_METHOD(CheckStateTestCross4)
+		{
+			GameField gameField(3);
+			gameField.SetCross(0, 2);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
+
+			gameField.SetCross(1, 1);
+			gameField.SetCross(2, 0);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateCross);
+		}
+
+		TEST_METHOD(CheckStateTestZero4)
+		{
+			GameField gameField(3);
+			gameField.SetZero(0, 2);
+			GameStateChecker gameStateChecker(3, gameField);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateNone);
+
+			gameField.SetZero(1, 1);
+			gameField.SetZero(2, 0);
+			Assert::AreEqual(gameStateChecker.CheckGameState(), gameStates.StateZero);
+		}
+	};
 }
