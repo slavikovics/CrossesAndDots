@@ -10,8 +10,8 @@ void NewGame()
 	int dimension;
 	int x;
 	int y;
-	string nowActions = "X";
-	string gameState = "";
+	string nowActions = gameStates.StateCross;
+	string gameState = gameStates.StateNone;
 
 	cout << "Enter field dimensions" << endl;
 	cin >> dimension;
@@ -36,16 +36,16 @@ void NewGame()
 		cin >> x >> y;
 		system("cls");
 
-		if (nowActions == "X")
+		if (nowActions == gameStates.StateCross)
 		{
 			if(!gameField.SetCross(x - 1, y - 1)) continue;
-			nowActions = "0";
+			nowActions = gameStates.StateZero;
 		}
 
-		else if (nowActions == "0")
+		else if (nowActions == gameStates.StateZero)
 		{
 			if(!gameField.SetZero(x - 1, y - 1)) continue;
-			nowActions = "X";
+			nowActions = gameStates.StateCross;
 		}
 	}
 }
