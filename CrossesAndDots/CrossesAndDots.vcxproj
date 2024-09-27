@@ -133,6 +133,7 @@
     <ClInclude Include="ScenesBuilder.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="GameField.cpp" />
     <ClCompile Include="Player.cpp" />
   </ItemGroup>
   <ItemGroup>
