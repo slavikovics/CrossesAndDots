@@ -102,3 +102,8 @@ string GameField::GetField2(int x, int y)
 	if (fields[x][y] == 2) return gameStates.StateZero;
 	else return gameStates.StateNone;
 }
+
+bool GameField::IsACopy()
+{
+	return isACopy;
+}

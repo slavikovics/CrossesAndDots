@@ -63,6 +63,8 @@ class GameField
 		/// <returns>string</returns>
 		string GetField2(int x, int y);
 
+		bool IsACopy();
+
 	private:
 
 		/// <summary>

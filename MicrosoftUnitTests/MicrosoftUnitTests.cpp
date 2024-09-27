@@ -50,7 +50,9 @@ namespace MicrosoftUnitTests
 		/// </summary>
 		TEST_METHOD(OperatorTest2)
 		{
-
+			GameField gameField1(5);
+			GameField gameField2 = gameField1;
+			Assert::AreEqual(gameField2.);
 		}
 	};
 }
