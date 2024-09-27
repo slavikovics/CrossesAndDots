@@ -91,33 +91,41 @@ $(function(){ initResizable(false); });
 </div><!--header-->
 <div class="contents">
 
+<p>Class for storing and getting the information about game field and it's elements.  
+ <a href="#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="_game_field_8h_source.html">GameField.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b77913bbaac054b7f3acae63f27dcd7" id="r_a2b77913bbaac054b7f3acae63f27dcd7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a2b77913bbaac054b7f3acae63f27dcd7">GameField</a> (int dimension)</td></tr>
+<tr class="memdesc:a2b77913bbaac054b7f3acae63f27dcd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>, calls void SetFieldDimension(int d)  <br /></td></tr>
 <tr class="separator:a2b77913bbaac054b7f3acae63f27dcd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad86d2092617bbda4da40b8d6a14f892d" id="r_ad86d2092617bbda4da40b8d6a14f892d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad86d2092617bbda4da40b8d6a14f892d">GameField</a> ()</td></tr>
+<tr class="memdesc:ad86d2092617bbda4da40b8d6a14f892d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for copied instances (for the field of <a class="el" href="class_game_state_checker.html" title="Is used to check game state.">GameStateChecker</a>). Requires operator= call.  <br /></td></tr>
 <tr class="separator:ad86d2092617bbda4da40b8d6a14f892d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04b5fcab27b16258195206d0f0b3d876" id="r_a04b5fcab27b16258195206d0f0b3d876"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a04b5fcab27b16258195206d0f0b3d876">~GameField</a> ()</td></tr>
+<tr class="memdesc:a04b5fcab27b16258195206d0f0b3d876"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls delete[] for int** fields field, skips deleting if destructor is called from an instance, in which bool isACopy equals to true.  <br /></td></tr>
 <tr class="separator:a04b5fcab27b16258195206d0f0b3d876"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54ae7f0c3666e46c016aa82b9b1e37cb" id="r_a54ae7f0c3666e46c016aa82b9b1e37cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_game_field.html">GameField</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a54ae7f0c3666e46c016aa82b9b1e37cb">operator=</a> (<a class="el" href="class_game_field.html">GameField</a> &amp;gameField)</td></tr>
+<tr class="memdesc:a54ae7f0c3666e46c016aa82b9b1e37cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overwrites int fieldDimension and int** fields with those properties of gameField.  <br /></td></tr>
 <tr class="separator:a54ae7f0c3666e46c016aa82b9b1e37cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a953096a41dbcb6f5ecff7150f254a377" id="r_a953096a41dbcb6f5ecff7150f254a377"><td class="memItemLeft" align="right" valign="top"><a id="a953096a41dbcb6f5ecff7150f254a377" name="a953096a41dbcb6f5ecff7150f254a377"></a>
-int &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (int index)</td></tr>
+<tr class="memitem:a953096a41dbcb6f5ecff7150f254a377" id="r_a953096a41dbcb6f5ecff7150f254a377"><td class="memItemLeft" align="right" valign="top">int &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a953096a41dbcb6f5ecff7150f254a377">operator[]</a> (int index)</td></tr>
 <tr class="separator:a953096a41dbcb6f5ecff7150f254a377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a613dc36449a05e0f90e19a0948f3471e" id="r_a613dc36449a05e0f90e19a0948f3471e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a613dc36449a05e0f90e19a0948f3471e">SetZero</a> (int y, int x)</td></tr>
+<tr class="memdesc:a613dc36449a05e0f90e19a0948f3471e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for setting a zero in a <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>. Tries to set zero in the given position.  <br /></td></tr>
 <tr class="separator:a613dc36449a05e0f90e19a0948f3471e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adbdd53c1b7d6d2cdfb71a509526604b1" id="r_adbdd53c1b7d6d2cdfb71a509526604b1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#adbdd53c1b7d6d2cdfb71a509526604b1">SetCross</a> (int y, int x)</td></tr>
+<tr class="memdesc:adbdd53c1b7d6d2cdfb71a509526604b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method for setting a cross in a <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>. Tries to set cross in the given position.  <br /></td></tr>
 <tr class="separator:adbdd53c1b7d6d2cdfb71a509526604b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d34cf829b9f63ef2e71196727311683" id="r_a4d34cf829b9f63ef2e71196727311683"><td class="memItemLeft" align="right" valign="top"><a id="a4d34cf829b9f63ef2e71196727311683" name="a4d34cf829b9f63ef2e71196727311683"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</td></tr>
+<tr class="memitem:a4d34cf829b9f63ef2e71196727311683" id="r_a4d34cf829b9f63ef2e71196727311683"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4d34cf829b9f63ef2e71196727311683">GetDimension</a> ()</td></tr>
 <tr class="separator:a4d34cf829b9f63ef2e71196727311683"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af70acb0b3a1f7365b22489826ca1e56a" id="r_af70acb0b3a1f7365b22489826ca1e56a"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#af70acb0b3a1f7365b22489826ca1e56a">GetField2</a> (int x, int y)</td></tr>
+<tr class="memdesc:af70acb0b3a1f7365b22489826ca1e56a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns GameState of <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> element.  <br /></td></tr>
 <tr class="separator:af70acb0b3a1f7365b22489826ca1e56a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Class for stroing and getting the information about game field and it's elements. </p>
+<div class="textblock"><p>Class for storing and getting the information about game field and it's elements. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a2b77913bbaac054b7f3acae63f27dcd7" name="a2b77913bbaac054b7f3acae63f27dcd7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2b77913bbaac054b7f3acae63f27dcd7">&#9670;&#160;</a></span>GameField() <span class="overload">[1/2]</span></h2>
@@ -133,7 +141,14 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor for <a class="el" href="class_game_field.html">GameField</a>, calls void SetFieldDimension(int d) </p>
+
+<p>Constructor for <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>, calls void SetFieldDimension(int d) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dimension</td><td>: dimension of <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -151,7 +166,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor for copied instances (for the field of <a class="el" href="class_game_state_checker.html">GameStateChecker</a>). Requires operator= call. </p>
+
+<p>Constructor for copied instances (for the field of <a class="el" href="class_game_state_checker.html" title="Is used to check game state.">GameStateChecker</a>). Requires operator= call. </p>
 
 </div>
 </div>
@@ -169,12 +185,30 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Calls delete[] for int** fields field, skips deleting if destructor is called from an instance, in which bool isACopy equals to true. <br  />
- </p>
+
+<p>Calls delete[] for int** fields field, skips deleting if destructor is called from an instance, in which bool isACopy equals to true. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4d34cf829b9f63ef2e71196727311683" name="a4d34cf829b9f63ef2e71196727311683"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d34cf829b9f63ef2e71196727311683">&#9670;&#160;</a></span>GetDimension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int GameField::GetDimension </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>int dimension</dd></dl>
+
+</div>
+</div>
 <a id="af70acb0b3a1f7365b22489826ca1e56a" name="af70acb0b3a1f7365b22489826ca1e56a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af70acb0b3a1f7365b22489826ca1e56a">&#9670;&#160;</a></span>GetField2()</h2>
 
@@ -193,7 +227,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns GameState of <a class="el" href="class_game_field.html">GameField</a> element x: row of the <a class="el" href="class_game_field.html">GameField</a> (starts from 0) y: column of the <a class="el" href="class_game_field.html">GameField</a> (starts from 0) </p>
+
+<p>Returns GameState of <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> element. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>row of the <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> (starts from 0)</td></tr>
+    <tr><td class="paramname">y</td><td>column of the <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> (starts from 0)</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string</dd></dl>
 
 </div>
 </div>
@@ -211,8 +254,32 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Overwrites int fieldDimension and int** fields fields with those properties of gameField <br  />
- </p>
+
+<p>Overwrites int fieldDimension and int** fields with those properties of gameField. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">gameField</td><td><a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>&amp; gameField</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>&amp; gameField</dd></dl>
+
+</div>
+</div>
+<a id="a953096a41dbcb6f5ecff7150f254a377" name="a953096a41dbcb6f5ecff7150f254a377"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953096a41dbcb6f5ecff7150f254a377">&#9670;&#160;</a></span>operator[]()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int &amp; GameField::operator[] </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -234,7 +301,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Method for setting a cross in a <a class="el" href="class_game_field.html">GameField</a>. Tries to set cross in the given position. Returns true if the cross was successfully set, returns false if cross can't be set in the given position. </p>
+
+<p>Method for setting a cross in a <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>. Tries to set cross in the given position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>: index of <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> element</td></tr>
+    <tr><td class="paramname">y</td><td>: index of <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> element</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if cross was successfully set, returns false if cross can't be set in the given position.</dd></dl>
 
 </div>
 </div>
@@ -256,13 +332,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDimension</b> ()</t
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Method for setting a zero in a <a class="el" href="class_game_field.html">GameField</a>. Tries to set zero in the given position. Returns true if the zero was successfully set, returns false if zero can't be set in the given position. </p>
+
+<p>Method for setting a zero in a <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a>. Tries to set zero in the given position. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">y</td><td>: index of <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> element</td></tr>
+    <tr><td class="paramname">x</td><td>: index of <a class="el" href="class_game_field.html" title="Class for storing and getting the information about game field and it&#39;s elements.">GameField</a> element</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns true if zero was successfully set, returns false if zero can't be set in the given position.</dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>CrossesAndDots/<a class="el" href="_game_field_8h_source.html">GameField.h</a></li>
-<li>CrossesAndDots/<b>GameField.cpp</b></li>
+<li>CrossesAndDots/<a class="el" href="_game_field_8cpp.html">GameField.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

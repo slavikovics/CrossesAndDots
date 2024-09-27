@@ -1,16 +1,60 @@
 \doxysection{Scenes\+Builder Class Reference}
 \hypertarget{class_scenes_builder}{}\label{class_scenes_builder}\index{ScenesBuilder@{ScenesBuilder}}
+
+
+Is used to generate Console output strings.  
+
+
+
+
+{\ttfamily \#include $<$Scenes\+Builder.\+h$>$}
+
 \doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{class_scenes_builder_a017460c7eeec90109ea450a63681d7ee}\label{class_scenes_builder_a017460c7eeec90109ea450a63681d7ee} 
-static string {\bfseries Menu\+Build} ()
-\item 
-\Hypertarget{class_scenes_builder_aa9815a418a482b5bf25a111f2f521efd}\label{class_scenes_builder_aa9815a418a482b5bf25a111f2f521efd} 
-static string {\bfseries Game\+Build} (\mbox{\hyperlink{class_game_field}{Game\+Field}} \&game\+Field)
-\end{DoxyCompactItemize}
+static string \mbox{\hyperlink{class_scenes_builder_a017460c7eeec90109ea450a63681d7ee}{Menu\+Build}} ()
+\begin{DoxyCompactList}\small\item\em Builds string representation of Menu. \end{DoxyCompactList}\item 
+static string \mbox{\hyperlink{class_scenes_builder_aa9815a418a482b5bf25a111f2f521efd}{Game\+Build}} (\mbox{\hyperlink{class_game_field}{Game\+Field}} \&game\+Field)
+\begin{DoxyCompactList}\small\item\em Builds string representation of \doxylink{class_game_field}{Game\+Field} intance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Is used to generate Console output strings. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_scenes_builder_aa9815a418a482b5bf25a111f2f521efd}\index{ScenesBuilder@{ScenesBuilder}!GameBuild@{GameBuild}}
+\index{GameBuild@{GameBuild}!ScenesBuilder@{ScenesBuilder}}
+\doxysubsubsection{\texorpdfstring{GameBuild()}{GameBuild()}}
+{\footnotesize\ttfamily \label{class_scenes_builder_aa9815a418a482b5bf25a111f2f521efd} 
+static string Scenes\+Builder\+::\+Game\+Build (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_game_field}{Game\+Field}} \&}]{game\+Field}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Builds string representation of \doxylink{class_game_field}{Game\+Field} intance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+Field} & \+: \doxylink{class_game_field}{Game\+Field} instance\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\+: string representation of \doxylink{class_game_field}{Game\+Field} intance
+\end{DoxyReturn}
+\Hypertarget{class_scenes_builder_a017460c7eeec90109ea450a63681d7ee}\index{ScenesBuilder@{ScenesBuilder}!MenuBuild@{MenuBuild}}
+\index{MenuBuild@{MenuBuild}!ScenesBuilder@{ScenesBuilder}}
+\doxysubsubsection{\texorpdfstring{MenuBuild()}{MenuBuild()}}
+{\footnotesize\ttfamily \label{class_scenes_builder_a017460c7eeec90109ea450a63681d7ee} 
+static string Scenes\+Builder\+::\+Menu\+Build (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Builds string representation of Menu. 
+
+\begin{DoxyReturn}{Returns}
+\+: string representation of Menu
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-Crosses\+And\+Dots/Scenes\+Builder.\+h\end{DoxyCompactItemize}
+Crosses\+And\+Dots/\mbox{\hyperlink{_scenes_builder_8h}{Scenes\+Builder.\+h}}\end{DoxyCompactItemize}

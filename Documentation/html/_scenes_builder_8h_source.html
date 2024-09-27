@@ -91,65 +91,77 @@ $(function(){ initResizable(false); });
   <div class="headertitle"><div class="title">ScenesBuilder.h</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;GameField.h&quot;</span></div>
+<a href="_scenes_builder_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &quot;<a class="code" href="_game_field_8h.html">GameField.h</a>&quot;</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="};">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="class_scenes_builder.html">    4</a></span><span class="keyword">class </span><a class="code hl_class" href="class_scenes_builder.html">ScenesBuilder</a></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>{</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> MenuBuild()</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    {</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>        <span class="keywordtype">string</span> output = <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        output += <span class="stringliteral">&quot;1 - Play\n&quot;</span>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>        output += <span class="stringliteral">&quot;2 - Exit\n&quot;</span>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        <span class="keywordflow">return</span> output;</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">static</span> <span class="keywordtype">string</span> GameBuild(<a class="code hl_class" href="class_game_field.html">GameField</a> &amp; gameField)</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        <a class="code hl_class" href="class_game_states.html">GameStates</a> gameStates;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>        <span class="keywordtype">int</span> fieldDimension = gameField.GetDimension();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        <span class="keywordtype">string</span> output = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="};">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_scenes_builder.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="class_scenes_builder.html">ScenesBuilder</a></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="foldopen" id="foldopen00016" data-start="{" data-end="}">
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_scenes_builder.html#a017460c7eeec90109ea450a63681d7ee">   16</a></span>    <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_scenes_builder.html#a017460c7eeec90109ea450a63681d7ee">MenuBuild</a>()</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordtype">string</span> output = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        output += <span class="stringliteral">&quot;1 - Play\n&quot;</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        output += <span class="stringliteral">&quot;2 - Exit\n&quot;</span>;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        <span class="keywordflow">return</span> output;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    }</div>
+</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; fieldDimension; i++)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        {</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; fieldDimension; j++)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>            {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                <span class="keywordflow">if</span> (gameField.<a class="code hl_function" href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GetField2</a>(i, j) == gameStates.StateNone)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                    output += <span class="stringliteral">&quot; # &quot;</span>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                }</div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="}">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="class_scenes_builder.html#aa9815a418a482b5bf25a111f2f521efd">   30</a></span>    <span class="keyword">static</span> <span class="keywordtype">string</span> <a class="code hl_function" href="class_scenes_builder.html#aa9815a418a482b5bf25a111f2f521efd">GameBuild</a>(<a class="code hl_class" href="class_game_field.html">GameField</a> &amp; gameField)</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        <a class="code hl_class" href="class_game_states.html">GameStates</a> <a class="code hl_variable" href="_player_8cpp.html#a9eebb277adcb5e6793cbea7eb2d474f4">gameStates</a>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordtype">int</span> fieldDimension = gameField.<a class="code hl_function" href="class_game_field.html#a4d34cf829b9f63ef2e71196727311683">GetDimension</a>();</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                <span class="keywordflow">if</span> (gameField.<a class="code hl_function" href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GetField2</a>(i, j) == gameStates.StateCross)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                {</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                    output += <span class="stringliteral">&quot; X &quot;</span>;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                    <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>                }</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">if</span> (gameField.<a class="code hl_function" href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GetField2</a>(i, j) == gameStates.StateZero)</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="keywordtype">string</span> output = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; fieldDimension; i++)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>            <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; fieldDimension; j++)</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>            {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>                <span class="keywordflow">if</span> (gameField.<a class="code hl_function" href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GetField2</a>(i, j) == <a class="code hl_variable" href="_player_8cpp.html#a9eebb277adcb5e6793cbea7eb2d474f4">gameStates</a>.<a class="code hl_variable" href="class_game_states.html#a077fd71ed8b155c13f3acd7428930604">StateNone</a>)</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    output += <span class="stringliteral">&quot; O &quot;</span>;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                    output += <span class="stringliteral">&quot; # &quot;</span>;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                    <span class="keywordflow">continue</span>;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>            }</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>            output += <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">return</span> output;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>};</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                <span class="keywordflow">if</span> (gameField.<a class="code hl_function" href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GetField2</a>(i, j) == <a class="code hl_variable" href="_player_8cpp.html#a9eebb277adcb5e6793cbea7eb2d474f4">gameStates</a>.<a class="code hl_variable" href="class_game_states.html#a20e170ec8af3760d133e838a12574285">StateCross</a>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                    output += <span class="stringliteral">&quot; X &quot;</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>                }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                <span class="keywordflow">if</span> (gameField.<a class="code hl_function" href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GetField2</a>(i, j) == <a class="code hl_variable" href="_player_8cpp.html#a9eebb277adcb5e6793cbea7eb2d474f4">gameStates</a>.<a class="code hl_variable" href="class_game_states.html#a931e64eafb2afa319fd3b296901999da">StateZero</a>)</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>                {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>                    output += <span class="stringliteral">&quot; O &quot;</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>                }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            output += <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        <span class="keywordflow">return</span> output;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
 </div>
-<div class="ttc" id="aclass_game_field_html"><div class="ttname"><a href="class_game_field.html">GameField</a></div><div class="ttdef"><b>Definition</b> GameField.h:7</div></div>
-<div class="ttc" id="aclass_game_field_html_af70acb0b3a1f7365b22489826ca1e56a"><div class="ttname"><a href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GameField::GetField2</a></div><div class="ttdeci">string GetField2(int x, int y)</div><div class="ttdef"><b>Definition</b> GameField.cpp:98</div></div>
-<div class="ttc" id="aclass_game_states_html"><div class="ttname"><a href="class_game_states.html">GameStates</a></div><div class="ttdef"><b>Definition</b> GameStates.h:7</div></div>
-<div class="ttc" id="aclass_scenes_builder_html"><div class="ttname"><a href="class_scenes_builder.html">ScenesBuilder</a></div><div class="ttdef"><b>Definition</b> ScenesBuilder.h:5</div></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>};</div>
+</div>
+<div class="ttc" id="a_game_field_8h_html"><div class="ttname"><a href="_game_field_8h.html">GameField.h</a></div></div>
+<div class="ttc" id="a_player_8cpp_html_a9eebb277adcb5e6793cbea7eb2d474f4"><div class="ttname"><a href="_player_8cpp.html#a9eebb277adcb5e6793cbea7eb2d474f4">gameStates</a></div><div class="ttdeci">GameStates gameStates</div><div class="ttdef"><b>Definition</b> Player.cpp:6</div></div>
+<div class="ttc" id="aclass_game_field_html"><div class="ttname"><a href="class_game_field.html">GameField</a></div><div class="ttdoc">Class for storing and getting the information about game field and it's elements.</div><div class="ttdef"><b>Definition</b> GameField.h:8</div></div>
+<div class="ttc" id="aclass_game_field_html_a4d34cf829b9f63ef2e71196727311683"><div class="ttname"><a href="class_game_field.html#a4d34cf829b9f63ef2e71196727311683">GameField::GetDimension</a></div><div class="ttdeci">int GetDimension()</div><div class="ttdef"><b>Definition</b> GameField.cpp:93</div></div>
+<div class="ttc" id="aclass_game_field_html_af70acb0b3a1f7365b22489826ca1e56a"><div class="ttname"><a href="class_game_field.html#af70acb0b3a1f7365b22489826ca1e56a">GameField::GetField2</a></div><div class="ttdeci">string GetField2(int x, int y)</div><div class="ttdoc">Returns GameState of GameField element.</div><div class="ttdef"><b>Definition</b> GameField.cpp:98</div></div>
+<div class="ttc" id="aclass_game_states_html"><div class="ttname"><a href="class_game_states.html">GameStates</a></div><div class="ttdoc">Class for storing constants of game states. Constatnts are used for both GameField elements and for G...</div><div class="ttdef"><b>Definition</b> GameStates.h:11</div></div>
+<div class="ttc" id="aclass_game_states_html_a077fd71ed8b155c13f3acd7428930604"><div class="ttname"><a href="class_game_states.html#a077fd71ed8b155c13f3acd7428930604">GameStates::StateNone</a></div><div class="ttdeci">const string StateNone</div><div class="ttdef"><b>Definition</b> GameStates.h:20</div></div>
+<div class="ttc" id="aclass_game_states_html_a20e170ec8af3760d133e838a12574285"><div class="ttname"><a href="class_game_states.html#a20e170ec8af3760d133e838a12574285">GameStates::StateCross</a></div><div class="ttdeci">const string StateCross</div><div class="ttdef"><b>Definition</b> GameStates.h:16</div></div>
+<div class="ttc" id="aclass_game_states_html_a931e64eafb2afa319fd3b296901999da"><div class="ttname"><a href="class_game_states.html#a931e64eafb2afa319fd3b296901999da">GameStates::StateZero</a></div><div class="ttdeci">const string StateZero</div><div class="ttdef"><b>Definition</b> GameStates.h:14</div></div>
+<div class="ttc" id="aclass_scenes_builder_html"><div class="ttname"><a href="class_scenes_builder.html">ScenesBuilder</a></div><div class="ttdoc">Is used to generate Console output strings.</div><div class="ttdef"><b>Definition</b> ScenesBuilder.h:8</div></div>
+<div class="ttc" id="aclass_scenes_builder_html_a017460c7eeec90109ea450a63681d7ee"><div class="ttname"><a href="class_scenes_builder.html#a017460c7eeec90109ea450a63681d7ee">ScenesBuilder::MenuBuild</a></div><div class="ttdeci">static string MenuBuild()</div><div class="ttdoc">Builds string representation of Menu.</div><div class="ttdef"><b>Definition</b> ScenesBuilder.h:16</div></div>
+<div class="ttc" id="aclass_scenes_builder_html_aa9815a418a482b5bf25a111f2f521efd"><div class="ttname"><a href="class_scenes_builder.html#aa9815a418a482b5bf25a111f2f521efd">ScenesBuilder::GameBuild</a></div><div class="ttdeci">static string GameBuild(GameField &amp;gameField)</div><div class="ttdoc">Builds string representation of GameField intance.</div><div class="ttdef"><b>Definition</b> ScenesBuilder.h:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

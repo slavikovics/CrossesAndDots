@@ -1,11 +1,18 @@
 #pragma once
 #include "GameField.h"
 
+/// <summary>
+/// Is used to generate Console output strings
+/// </summary>
 class ScenesBuilder
 {
 
   public:
 
+	/// <summary>
+	/// Builds string representation of Menu
+	/// </summary>
+	/// <returns>: string representation of Menu</returns>
 	static string MenuBuild()
 	{
 		string output = "";
@@ -15,6 +22,11 @@ class ScenesBuilder
 		return output;
 	}
 
+	/// <summary>
+	/// Builds string representation of GameField intance
+	/// </summary>
+	/// <param name="gameField">: GameField instance</param>
+	/// <returns>: string representation of GameField intance</returns>
 	static string GameBuild(GameField & gameField)
 	{
 		GameStates gameStates;

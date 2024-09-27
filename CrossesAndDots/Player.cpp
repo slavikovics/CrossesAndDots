@@ -11,6 +11,13 @@ void GameInformation(string nowActions, string gameState)
 	cout << " Winner: " << gameState << endl;
 }
 
+/// <summary>
+/// Handles all game operations, checks and console updates
+/// </summary>
+/// <param name="nowActions">represents whose turn to make a move</param>
+/// <param name="gameState">represents who is winning</param>
+/// <param name="gameField">GameField& gameField</param>
+/// <param name="gameStateChecker">GameStateChecker& gameStateChecker</param>
 void GameCycle(string nowActions, string gameState, GameField& gameField, GameStateChecker& gameStateChecker)
 {
 	int x;
@@ -45,6 +52,9 @@ void GameCycle(string nowActions, string gameState, GameField& gameField, GameSt
 	}
 }
 
+/// <summary>
+/// Launches new game
+/// </summary>
 void NewGame()
 {
 	int dimension;
@@ -63,6 +73,10 @@ void NewGame()
 	system("cls");
 }
 
+/// <summary>
+/// Called at the start of the programm
+/// </summary>
+/// <returns>0 if ended successfully</returns>
 int main()
 {
 	while (true)

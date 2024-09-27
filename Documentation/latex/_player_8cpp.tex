@@ -1,0 +1,82 @@
+\doxysection{Crosses\+And\+Dots/\+Player.cpp File Reference}
+\hypertarget{_player_8cpp}{}\label{_player_8cpp}\index{CrossesAndDots/Player.cpp@{CrossesAndDots/Player.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include "{}Game\+State\+Checker.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_player_8cpp_aaa4dff7313d245a2e62a480c31f0fa34}{Game\+Information}} (string now\+Actions, string game\+State)
+\item 
+void \mbox{\hyperlink{_player_8cpp_a304991be123828d01576094b3eaf65b5}{Game\+Cycle}} (string now\+Actions, string game\+State, \mbox{\hyperlink{class_game_field}{Game\+Field}} \&game\+Field, \mbox{\hyperlink{class_game_state_checker}{Game\+State\+Checker}} \&game\+State\+Checker)
+\begin{DoxyCompactList}\small\item\em Handles all game operations, checks and console updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_player_8cpp_adfe34532a9f16b809ce5752fe143dddc}{New\+Game}} ()
+\begin{DoxyCompactList}\small\item\em Launches new game. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_player_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Called at the start of the programm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_game_states}{Game\+States}} \mbox{\hyperlink{_player_8cpp_a9eebb277adcb5e6793cbea7eb2d474f4}{game\+States}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{_player_8cpp_a304991be123828d01576094b3eaf65b5}\index{Player.cpp@{Player.cpp}!GameCycle@{GameCycle}}
+\index{GameCycle@{GameCycle}!Player.cpp@{Player.cpp}}
+\doxysubsubsection{\texorpdfstring{GameCycle()}{GameCycle()}}
+{\footnotesize\ttfamily \label{_player_8cpp_a304991be123828d01576094b3eaf65b5} 
+void Game\+Cycle (\begin{DoxyParamCaption}\item[{string}]{now\+Actions}{, }\item[{string}]{game\+State}{, }\item[{\mbox{\hyperlink{class_game_field}{Game\+Field}} \&}]{game\+Field}{, }\item[{\mbox{\hyperlink{class_game_state_checker}{Game\+State\+Checker}} \&}]{game\+State\+Checker}{}\end{DoxyParamCaption})}
+
+
+
+Handles all game operations, checks and console updates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em now\+Actions} & represents whose turn to make a move\\
+\hline
+{\em game\+State} & represents who is winning\\
+\hline
+{\em game\+Field} & \doxylink{class_game_field}{Game\+Field}\& game\+Field\\
+\hline
+{\em game\+State\+Checker} & \doxylink{class_game_state_checker}{Game\+State\+Checker}\& game\+State\+Checker\\
+\hline
+\end{DoxyParams}
+\Hypertarget{_player_8cpp_aaa4dff7313d245a2e62a480c31f0fa34}\index{Player.cpp@{Player.cpp}!GameInformation@{GameInformation}}
+\index{GameInformation@{GameInformation}!Player.cpp@{Player.cpp}}
+\doxysubsubsection{\texorpdfstring{GameInformation()}{GameInformation()}}
+{\footnotesize\ttfamily \label{_player_8cpp_aaa4dff7313d245a2e62a480c31f0fa34} 
+void Game\+Information (\begin{DoxyParamCaption}\item[{string}]{now\+Actions}{, }\item[{string}]{game\+State}{}\end{DoxyParamCaption})}
+
+\Hypertarget{_player_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{Player.cpp@{Player.cpp}!main@{main}}
+\index{main@{main}!Player.cpp@{Player.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{_player_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Called at the start of the programm. 
+
+\begin{DoxyReturn}{Returns}
+0 if ended successfully
+\end{DoxyReturn}
+\Hypertarget{_player_8cpp_adfe34532a9f16b809ce5752fe143dddc}\index{Player.cpp@{Player.cpp}!NewGame@{NewGame}}
+\index{NewGame@{NewGame}!Player.cpp@{Player.cpp}}
+\doxysubsubsection{\texorpdfstring{NewGame()}{NewGame()}}
+{\footnotesize\ttfamily \label{_player_8cpp_adfe34532a9f16b809ce5752fe143dddc} 
+void New\+Game (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Launches new game. 
+
+
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{_player_8cpp_a9eebb277adcb5e6793cbea7eb2d474f4}\index{Player.cpp@{Player.cpp}!gameStates@{gameStates}}
+\index{gameStates@{gameStates}!Player.cpp@{Player.cpp}}
+\doxysubsubsection{\texorpdfstring{gameStates}{gameStates}}
+{\footnotesize\ttfamily \label{_player_8cpp_a9eebb277adcb5e6793cbea7eb2d474f4} 
+\mbox{\hyperlink{class_game_states}{Game\+States}} game\+States}
+
