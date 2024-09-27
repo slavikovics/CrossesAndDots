@@ -30,12 +30,8 @@ class GameField
 
 		GameField& operator = (GameField& gameField);
 
-		int GetDimension();
-
 		// TODO change implementation
 		string operator[](int x);
-
-		string GetField2(int x, int y);
 
 		bool SetZero(int y, int x);
 
@@ -43,5 +39,9 @@ class GameField
 		// Returns true if the cross was successfully set, 
 		// returns false if cross can't be set in the given position
 		bool SetCross(int y, int x);
+
+		int GetDimension();
+
+		string GetField2(int x, int y);
 };
 

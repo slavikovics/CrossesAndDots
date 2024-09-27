@@ -35,6 +35,11 @@ GameField& GameField::operator= (GameField& gameField)
 	return *this;	
 }
 
+string GameField::operator[](int x)
+{
+	return GetField(x);
+}
+
 void GameField::SetFieldDimension(int d)
 {
 	if (d < 2 || d > 20) d = 3;
@@ -57,31 +62,6 @@ void GameField::SetFieldDimension(int d)
 	}
 }
 
-string GameField::GetField(int index)
-{
-	unsigned x = index % fieldDimension;
-	unsigned y = index / fieldDimension;
-	return GetField2(x, y);
-}
-
-int GameField::GetDimension()
-{
-	return fieldDimension;
-}
-
-string GameField::operator[](int x)
-{
-	return GetField(x);
-}
-
-string GameField::GetField2(int x, int y)
-{
-	if (x >= fieldDimension || y >= fieldDimension || x < 0 || y < 0) return "wrong arguments";
-	if (fields[x][y] == 1) return gameStates.StateCross;
-	if (fields[x][y] == 2) return gameStates.StateZero;
-	else return gameStates.StateNone;
-}
-
 bool GameField::SetZero(int y, int x)
 {
 	if (GetField2(x, y) == gameStates.StateNone)
@@ -102,4 +82,24 @@ bool GameField::SetCross(int y, int x)
 	}
 
 	return false;
+}
+
+string GameField::GetField(int index)
+{
+	unsigned x = index % fieldDimension;
+	unsigned y = index / fieldDimension;
+	return GetField2(x, y);
+}
+
+int GameField::GetDimension()
+{
+	return fieldDimension;
+}
+
+string GameField::GetField2(int x, int y)
+{
+	if (x >= fieldDimension || y >= fieldDimension || x < 0 || y < 0) return "wrong arguments";
+	if (fields[x][y] == 1) return gameStates.StateCross;
+	if (fields[x][y] == 2) return gameStates.StateZero;
+	else return gameStates.StateNone;
 }
