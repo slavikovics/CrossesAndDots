@@ -3,6 +3,8 @@
 
 using namespace std;
 
+GameStates gameStates;
+
 void NewGame()
 {
 	int dimension;
@@ -21,16 +23,11 @@ void NewGame()
 
 	while (true)
 	{
-
 		cout << ScenesBuilder::GameBuild(gameField);
-		
-		cout << " Now actions: " << nowActions << endl;
 		gameState = gameStateChecker.CheckGameState();
+		GameInformation(nowActions, gameState);
 
-		cout << " Winner: " << gameState << endl;
-		
-
-		if (gameState != "none")
+		if (gameState != gameStates.StateNone)
 		{
 			system("pause");
 			return;
@@ -51,6 +48,12 @@ void NewGame()
 			nowActions = "X";
 		}
 	}
+}
+
+void GameInformation(string nowActions, string gameState)
+{
+	cout << " Now actions: " << nowActions << endl;
+	cout << " Winner: " << gameState << endl;
 }
 
 
