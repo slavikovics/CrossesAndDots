@@ -13,14 +13,13 @@ class GameField
 
 		GameField& operator = (GameField& gameField);
 
-		// TODO change implementation
 		int& operator[](int index);
 
 		bool SetZero(int y, int x);
 
-		// Method for setting a cross in a GameField. Tries to set cross in the given position. 
-		// Returns true if the cross was successfully set, 
-		// returns false if cross can't be set in the given position
+		/// Method for setting a cross in a GameField. Tries to set cross in the given position. 
+		/// Returns true if the cross was successfully set, 
+		/// returns false if cross can't be set in the given position
 		bool SetCross(int y, int x);
 
 		int GetDimension();
