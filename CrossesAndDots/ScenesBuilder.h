@@ -5,7 +5,7 @@
 class ScenesBuilder
 {
 
-public:
+  public:
 
 	static string MenuBuild()
 	{
