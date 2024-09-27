@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrossesAndDots", "CrossesAndDots\CrossesAndDots.vcxproj", "{16A5EF27-B8B0-4099-9CB9-BB45CD18B75E}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CrossesAndDotsTests", "CrossesAndDotsTests\CrossesAndDotsTests.vcxproj", "{0C4E4F1B-04C3-405F-BA5B-993932829712}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,14 @@ Global
 		{16A5EF27-B8B0-4099-9CB9-BB45CD18B75E}.Release|x64.Build.0 = Release|x64
 		{16A5EF27-B8B0-4099-9CB9-BB45CD18B75E}.Release|x86.ActiveCfg = Release|Win32
 		{16A5EF27-B8B0-4099-9CB9-BB45CD18B75E}.Release|x86.Build.0 = Release|Win32
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Debug|x64.ActiveCfg = Debug|x64
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Debug|x64.Build.0 = Debug|x64
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Debug|x86.ActiveCfg = Debug|Win32
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Debug|x86.Build.0 = Debug|Win32
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Release|x64.ActiveCfg = Release|x64
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Release|x64.Build.0 = Release|x64
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Release|x86.ActiveCfg = Release|Win32
+		{0C4E4F1B-04C3-405F-BA5B-993932829712}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
