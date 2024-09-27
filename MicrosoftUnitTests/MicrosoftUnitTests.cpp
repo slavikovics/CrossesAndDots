@@ -94,6 +94,9 @@ namespace MicrosoftUnitTests
 
 	TEST_CLASS(ScenesBuilderTests)
 	{
+		/// <summary>
+		/// Testing GameBuild()
+		/// </summary>
 		TEST_METHOD(GameBuildTest)
 		{
 			GameField gameField(3);
@@ -108,6 +111,9 @@ namespace MicrosoftUnitTests
 		}
 	};
 
+	/// <summary>
+	/// Testing different game scenarios
+	/// </summary>
 	TEST_CLASS(GameStateCheckerTests)
 	{
 		TEST_METHOD(CheckStateTestCross1)
