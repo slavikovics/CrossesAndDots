@@ -5,6 +5,12 @@ using namespace std;
 
 GameStates gameStates;
 
+void GameInformation(string nowActions, string gameState)
+{
+	cout << " Now actions: " << nowActions << endl;
+	cout << " Winner: " << gameState << endl;
+}
+
 void NewGame()
 {
 	int dimension;
@@ -49,13 +55,6 @@ void NewGame()
 		}
 	}
 }
-
-void GameInformation(string nowActions, string gameState)
-{
-	cout << " Now actions: " << nowActions << endl;
-	cout << " Winner: " << gameState << endl;
-}
-
 
 int main()
 {
