@@ -11,21 +11,10 @@ void GameInformation(string nowActions, string gameState)
 	cout << " Winner: " << gameState << endl;
 }
 
-void NewGame()
+void GameCycle(string nowActions, string gameState, GameField& gameField, GameStateChecker& gameStateChecker)
 {
-	int dimension;
 	int x;
 	int y;
-	string nowActions = gameStates.StateCross;
-	string gameState = gameStates.StateNone;
-
-	cout << "Enter field dimensions" << endl;
-	cin >> dimension;
-
-	GameField gameField(dimension);
-	GameStateChecker gameStateChecker(dimension, gameField);
-	
-	system("cls");
 
 	while (true)
 	{
@@ -38,22 +27,40 @@ void NewGame()
 			system("pause");
 			return;
 		}
-		
+
 		cin >> x >> y;
 		system("cls");
 
 		if (nowActions == gameStates.StateCross)
 		{
-			if(!gameField.SetCross(x - 1, y - 1)) continue;
+			if (!gameField.SetCross(x - 1, y - 1)) continue;
 			nowActions = gameStates.StateZero;
 		}
 
 		else if (nowActions == gameStates.StateZero)
 		{
-			if(!gameField.SetZero(x - 1, y - 1)) continue;
+			if (!gameField.SetZero(x - 1, y - 1)) continue;
 			nowActions = gameStates.StateCross;
 		}
 	}
+}
+
+void NewGame()
+{
+	int dimension;
+	string nowActions = gameStates.StateCross;
+	string gameState = gameStates.StateNone;
+
+	cout << "Enter field dimensions" << endl;
+	cin >> dimension;
+	system("cls");
+
+	GameField gameField(dimension);
+	GameStateChecker gameStateChecker(dimension, gameField);
+
+	GameCycle(nowActions, gameState, gameField, gameStateChecker);
+	
+	system("cls");
 }
 
 int main()
