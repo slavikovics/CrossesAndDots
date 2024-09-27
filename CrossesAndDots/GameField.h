@@ -3,23 +3,6 @@
 
 class GameField
 {
-
-	private:
-
-		int fieldDimension;
-
-		int** fields;
-
-		bool isACopy;
-
-		GameStates gameStates;
-
-		// Sets game field dimension. Acceptable d values: d >= 2 && d <= 20. Default: 3.
-
-		void SetFieldDimension(int d);
-
-		string GetField(int index);
-
 	public:	
 
 		GameField(int dimension);
@@ -43,5 +26,21 @@ class GameField
 		int GetDimension();
 
 		string GetField2(int x, int y);
+
+	private:
+
+		int fieldDimension;
+
+		int** fields;
+
+		bool isACopy;
+
+		GameStates gameStates;
+
+		// Sets game field dimension. Acceptable d values: d >= 2 && d <= 20. Default: 3.
+
+		void SetFieldDimension(int d);
+
+		string GetField(int index);
 };
 
