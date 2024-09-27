@@ -19,14 +19,14 @@ class GameStateChecker
 
 			for (int i = 0; i < _fieldDimension; i++)
 			{
-				winner = StateNone;
+				winner = gameStates.StateNone;
 				countInRow = 0;
 
 				for (int j = 0; j < _fieldDimension; j++)
 				{
 					string currentField = _gameField.GetField2(i, j);
 					if (j == 0) winner = currentField;
-					if (winner == StateNone) countInRow = -1;
+					if (winner == gameStates.StateNone) countInRow = -1;
 					if (winner != currentField) countInRow = -1;
 					countInRow++;
 				}
@@ -34,7 +34,7 @@ class GameStateChecker
 				if (countInRow == _fieldDimension) return winner;
 			}
 
-			return StateNone;
+			return gameStates.StateNone;
 		}
 
 		string CheckHorizontal()
@@ -45,7 +45,7 @@ class GameStateChecker
 
 			for (int i = 0; i < _fieldDimension; i++)
 			{
-				winner = StateNone;
+				winner = gameStates.StateNone;
 				countInRow = 0;
 
 				for (int j = 0; j < _fieldDimension; j++)
@@ -53,7 +53,7 @@ class GameStateChecker
 					string currentField = _gameField.GetField2(j, i);
 
 					if (j == 0) winner = currentField;
-					if (winner == StateNone) countInRow = -1;
+					if (winner == gameStates.StateNone) countInRow = -1;
 					if (winner != currentField) countInRow = -1;
 					countInRow++;
 				}
@@ -61,19 +61,19 @@ class GameStateChecker
 				if (countInRow == _fieldDimension) return winner;
 			}
 
-			return StateNone;
+			return gameStates.StateNone;
 		}
 		
 		string CheckD1()
 		{
-			string winner = StateNone;
+			string winner = gameStates.StateNone;
 
 			for (int i = 0; i < _fieldDimension; i++)
 			{
 				string currentField = _gameField.GetField2(i, i);
 				if (i == 0) winner = currentField;
-				if (currentField == StateNone) return StateNone;
-				if (currentField != winner) return StateNone;
+				if (currentField == gameStates.StateNone) return gameStates.StateNone;
+				if (currentField != winner) return gameStates.StateNone;
 			}
 
 			return winner;
@@ -82,7 +82,7 @@ class GameStateChecker
 		string CheckD2()
 		{
 
-			string winner = StateNone;
+			string winner = gameStates.StateNone;
 
 			int x = 0;
 
@@ -90,8 +90,8 @@ class GameStateChecker
 			{
 				string currentField = _gameField.GetField2(x, i);
 				if (x == 0) winner = currentField;
-				if (currentField == StateNone) return StateNone;
-				if (currentField != winner) return StateNone;
+				if (currentField == gameStates.StateNone) return gameStates.StateNone;
+				if (currentField != winner) return gameStates.StateNone;
 				x++;
 			}
 
@@ -104,11 +104,11 @@ class GameStateChecker
 			{
 				for (int j = 0; j < _fieldDimension; j++)
 				{
-					if (_gameField.GetField2(i, j) == StateNone) return StateNone;
+					if (_gameField.GetField2(i, j) == gameStates.StateNone) return gameStates.StateNone;
 				}
 			}
 
-			return StateTie;
+			return gameStates.StateTie;
 		}
 
 		string CheckGameState()
@@ -116,31 +116,27 @@ class GameStateChecker
 			string s = _gameField.GetField2(0, 0);
 
 			string state = CheckVertical();
-			if (state != StateNone) return state;
+			if (state != gameStates.StateNone) return state;
 
 			state = CheckHorizontal();
-			if (state != StateNone) return state;
+			if (state != gameStates.StateNone) return state;
 
 			state = CheckD1();
-			if (state != StateNone) return state;
+			if (state != gameStates.StateNone) return state;
 
 			state = CheckD2();
-			if (state != StateNone) return state;
+			if (state != gameStates.StateNone) return state;
 
 			state = CheckTie();
-			if (state != StateNone) return state;
+			if (state != gameStates.StateNone) return state;
 
-			return StateNone;
+			return gameStates.StateNone;
 		}
 
 	private:
 
-		const string StateZero = "zero";
-		const string StateCross = "cross";
-		const string StateTie = "tie";
-		const string StateNone = "none";
-
-	   GameField _gameField;
-	   int _fieldDimension;
+		GameStates gameStates;
+	    GameField _gameField;
+	    int _fieldDimension;
 
 };
