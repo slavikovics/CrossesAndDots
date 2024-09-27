@@ -1,7 +1,7 @@
 #pragma once
 #include "GameStates.h"
 
-/// Class for stroing and getting the information about game field and it's elements.
+/// Class for storing and getting the information about game field and it's elements.
 ///  
 class GameField
 {

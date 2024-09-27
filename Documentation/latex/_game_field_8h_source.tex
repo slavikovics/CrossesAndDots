@@ -5,44 +5,51 @@
 \DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
 \DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}GameStates.h"{}}}
 \DoxyCodeLine{00003\ }
-\DoxyCodeLine{00004\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_field}{GameField}}}
-\DoxyCodeLine{00005\ \{}
-\DoxyCodeLine{00006\ \ \ \ \ \textcolor{keyword}{public}:\ }
-\DoxyCodeLine{00007\ }
-\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field}{GameField}}(\textcolor{keywordtype}{int}\ dimension);}
+\DoxyCodeLine{00006\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_game_field}{GameField}}}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \textcolor{keyword}{public}:\ }
 \DoxyCodeLine{00009\ }
-\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field}{GameField}}();}
-\DoxyCodeLine{00011\ }
-\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field}{\string~GameField}}();}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field_ad86d2092617bbda4da40b8d6a14f892d}{GameField}}(\textcolor{keywordtype}{int}\ dimension);}
 \DoxyCodeLine{00013\ }
-\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field}{GameField}}\&\ operator\ =\ (\mbox{\hyperlink{class_game_field}{GameField}}\&\ gameField);}
-\DoxyCodeLine{00015\ }
-\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\&\ operator[](\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field_ad86d2092617bbda4da40b8d6a14f892d}{GameField}}();}
 \DoxyCodeLine{00017\ }
-\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ SetZero(\textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ x);}
-\DoxyCodeLine{00019\ }
-\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_adbdd53c1b7d6d2cdfb71a509526604b1}{SetCross}}(\textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ x);}
-\DoxyCodeLine{00024\ }
-\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ GetDimension();}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field_a04b5fcab27b16258195206d0f0b3d876}{\string~GameField}}();}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_field}{GameField}}\&\ \mbox{\hyperlink{class_game_field_a54ae7f0c3666e46c016aa82b9b1e37cb}{operator\ =\ }}(\mbox{\hyperlink{class_game_field}{GameField}}\&\ gameField);}
 \DoxyCodeLine{00026\ }
-\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ GetField2(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\&\ operator[](\textcolor{keywordtype}{int}\ index);}
 \DoxyCodeLine{00028\ }
-\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{private}:}
-\DoxyCodeLine{00030\ }
-\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ fieldDimension;}
-\DoxyCodeLine{00032\ }
-\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}**\ fields;}
-\DoxyCodeLine{00034\ }
-\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isACopy;}
-\DoxyCodeLine{00036\ }
-\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_states}{GameStates}}\ gameStates;}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_a613dc36449a05e0f90e19a0948f3471e}{SetZero}}(\textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ x);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_game_field_adbdd53c1b7d6d2cdfb71a509526604b1}{SetCross}}(\textcolor{keywordtype}{int}\ y,\ \textcolor{keywordtype}{int}\ x);}
 \DoxyCodeLine{00038\ }
-\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sets\ game\ field\ dimension.\ Acceptable\ d\ values:\ d\ >=\ 2\ \&\&\ d\ <=\ 20.\ Default:\ 3.}}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ GetDimension();}
 \DoxyCodeLine{00040\ }
-\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ SetFieldDimension(\textcolor{keywordtype}{int}\ d);}
-\DoxyCodeLine{00042\ }
-\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ GetField(\textcolor{keywordtype}{int}\ index);}
-\DoxyCodeLine{00044\ \};}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_game_field_af70acb0b3a1f7365b22489826ca1e56a}{GetField2}}(\textcolor{keywordtype}{int}\ x,\ \textcolor{keywordtype}{int}\ y);}
 \DoxyCodeLine{00045\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ fieldDimension;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Is\ used\ to\ store\ GameStates\ of\ particular\ GameField\ elements\ in\ int\ values.}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 0:\ GameStates.StateNone}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 1:\ GameStates.StateCross}}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ 2:\ GameState.StateZero}}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}**\ fields;}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Is\ used\ to\ differenciate\ instance\ of\ GameField,\ which\ was\ created\ in\ GameStateChecker\ }}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ and\ outside\ of\ it\ to\ optimize\ destructor\ calls\ of\ GameField.}}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ isACopy;}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_game_states}{GameStates}}\ gameStates;}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sets\ game\ field\ dimension.\ Initializes\ int**\ fields.}}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Acceptable\ dimensions\ values:\ value\ must\ be\ greater\ than\ 0\ and\ value\ must\ be\ less\ or\ equal\ to\ 20.\ }}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ If\ conditions\ are\ not\ passes\ the\ method\ sets\ a\ default\ dimension\ of\ 3.}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ SetFieldDimension(\textcolor{keywordtype}{int}\ d);}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ GetField(\textcolor{keywordtype}{int}\ index);}
+\DoxyCodeLine{00070\ \};}
+\DoxyCodeLine{00071\ }
 
 \end{DoxyCode}
