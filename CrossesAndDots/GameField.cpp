@@ -39,11 +39,11 @@ int& GameField::operator[](int index)
 	return fields[x][y];
 }
 
-void GameField::SetFieldDimension(int d)
+void GameField::SetFieldDimension(int dimension)
 {
-	if (d < 2 || d > 20) d = 3;
+	if (dimension < 2 || dimension > 20) dimension = 3;
 
-	fieldDimension = d;
+	fieldDimension = dimension;
 
 	fields = new int* [fieldDimension];
 
