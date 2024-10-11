@@ -12,6 +12,10 @@ TEST(GameFieldTest, ConstructorTest) {
 			EXPECT_EQ(gameField.GetField2(i, j), gameStates.StateNone);
 		}
 	}
+
+	GameField gameFieldEmpty;
+	EXPECT_EQ(gameFieldEmpty.GetDimension(), 0);
+	EXPECT_EQ(gameFieldEmpty.IsACopy(), true);
 }
 
 TEST(GameFieldTest, GetField2Test)
