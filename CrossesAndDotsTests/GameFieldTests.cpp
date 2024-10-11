@@ -1,11 +1,7 @@
 #include "pch.h"
 #include "../CrossesAndDots/GameField.h"
-#include "../CrossesAndDots/GameStateChecker.h"
-#include "../CrossesAndDots/GameStates.h"
-#include "../CrossesAndDots/ScenesBuilder.h"
 
-TEST(ConstructorTest)
-{
+TEST(GameFieldTest, ConstructorTest) {
 	GameField gameField(5);
 	GameStates gameStates;
 	EXPECT_EQ(5, gameField.GetDimension());
