@@ -1,0 +1,5 @@
+#include "pch.h"
+#include "../CrossesAndDots/GameField.h"
+#include "../CrossesAndDots/GameStateChecker.h"
+#include "../CrossesAndDots/GameStates.h"
+#include "../CrossesAndDots/ScenesBuilder.h"
