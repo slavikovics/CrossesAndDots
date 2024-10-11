@@ -66,7 +66,7 @@ void NewGame()
 	system("cls");
 
 	GameField gameField(dimension);
-	GameStateChecker gameStateChecker(dimension, gameField);
+	GameStateChecker gameStateChecker(gameField.GetDimension(), gameField);
 
 	GameCycle(nowActions, gameState, gameField, gameStateChecker);
 	
