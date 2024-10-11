@@ -44,4 +44,7 @@
       <Filter>Файлы ресурсов</Filter>
     </ResourceCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Downloads\CMakeLists.txt" />
+  </ItemGroup>
 </Project>

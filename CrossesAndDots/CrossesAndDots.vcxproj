@@ -140,6 +140,9 @@
   <ItemGroup>
     <ResourceCompile Include="CrossesAndDots.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\..\Downloads\CMakeLists.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>
